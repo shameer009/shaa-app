@@ -1,0 +1,28 @@
+# get list of all branches, current one will be marked with the * character
+git branch
+
+# create new branch called branch_name
+git branch branch_name
+
+# switch to existing branch called branch_name
+git checkout branch_name
+
+# create and checkout to just created branch, called branch_name
+git checkout -b branch_name
+
+# rename brunch called old_name to new_name
+git branch -m old_name new_name
+
+# rename current branch to new_name
+git branch -m new_name
+
+# remove local branch called branch_name
+git branch -d branch_name
+
+# push local branch called branch_name to remote repository
+git push --set-upstream origin branch_name
+# or
+git push -u origin branch_name
+
+# merge local branch called branch_name into your current branch
+git merge branch_name
